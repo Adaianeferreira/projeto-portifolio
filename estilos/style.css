@@ -41,8 +41,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-
-
 }
 
 nav#menu ul {
@@ -90,7 +88,7 @@ section#ficha img.foto  {
   outline: 5px solid var(--destaque);
   display: block;
   margin: auto;
-  margin: 15px;
+ 
 }
 
 section#ficha h1 {
@@ -272,6 +270,21 @@ footer a:hover {
 
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto ;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 68px;
+  }
+
+  section#detalhes {
+    grid-column: 3 / 4;
+  }
+  
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
